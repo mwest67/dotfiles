@@ -1,4 +1,6 @@
 set nocompatible              " be iMproved, required
+set nomodeline              " No modelines
+set modelines=0
 filetype off                  " required
 
 
