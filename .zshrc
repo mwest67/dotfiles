@@ -87,7 +87,6 @@ alias cat='cat -v'
 export EDITOR=vim
 export TERM=xterm-256color
 export GTK_THEME=Adwaita:dark
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 source $HOME/.custom_host_config
 
 screenfetch

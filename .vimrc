@@ -199,7 +199,7 @@ redraw
 
 "set inccommand=nosplit
 
-let g:vimwiki_list = [{'path': '~/vimwiki/', 'auto_toc': 1}]
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'auto_toc': 1, 'ext': 'md', 'syntax': 'markdown'}]
 
 let g:UltiSnipsExpandTrigger="<c-j>"
 
@@ -218,7 +218,6 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 let wiki = {}
 let wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
-
 " fzf map ctrl-p to fuzzy find files
 nnoremap <C-f> :Files<CR>
 nnoremap <C-g> :Rg<CR>
