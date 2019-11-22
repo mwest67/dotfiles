@@ -5,7 +5,7 @@ filetype off                  " required
 
 
 filetype plugin indent on    " required
-colorscheme slate
+colorscheme default
 
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -221,6 +221,8 @@ let wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
 " fzf map ctrl-p to fuzzy find files
 nnoremap <C-f> :Files<CR>
 nnoremap <C-g> :Rg<CR>
+let g:vim_http_split_vertically = 1
+let g:vim_http_tempbuffer = 1
 
 if !exists('*minpac#init')
   finish
@@ -230,7 +232,7 @@ call minpac#init()
 
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('tpope/vim-fugitive')
-call minpac#add('git://git.wincent.com/command-t.git')
+"call minpac#add('git://git.wincent.com/command-t.git')
 call minpac#add('godlygeek/tabular')
 call minpac#add('tpope/vim-vinegar')
 call minpac#add('vim-syntastic/syntastic')
@@ -245,3 +247,4 @@ call minpac#add('Valloric/YouCompleteMe')
 call minpac#add('mattn/emmet-vim')
 call minpac#add('ervandew/supertab')
 call minpac#add('junegunn/fzf.vim')
+call minpac#add('nicwest/vim-http')
